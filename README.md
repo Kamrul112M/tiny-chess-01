@@ -1,8 +1,8 @@
 # Tiny Chess — a 4 KB chess engine
 
-![Python](https://img.shields.io/badge/Python-3.13-blue)
-![Size](https://img.shields.io/badge/main.py-4058%20bytes-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-green)
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/Kamrul112M/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/Kamrul112M/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
 An original chess engine written for the MakeFun **tiny-chess-01**
 competition: the strongest engine that fits in **4,096 bytes of Python**.
@@ -22,6 +22,12 @@ randomness — so every trial replays move for move.
   move by move, with a tapered king table (middlegame → endgame).
 - Copy-make board updates with Zobrist hashing.
 
+## Run it
+
+The engine talks to the competition environment server:
+
+    MAKEFUN_ENV_URL=http://127.0.0.1:8080 python3 -P -s main.py
+
 ## Layout
 
 - `main.py` — the whole entry (unpacker + packed engine), stdlib only.
@@ -32,5 +38,5 @@ Built and tested against the competition dev kit's practice gauntlet
 
 ## Links
 
-- Competition: https://make.fun (tiny-chess-01)
+- Competition: [make.fun bounty — tiny-chess-01](https://make.fun/bounty/tiny-chess-01)
 - Author: https://github.com/Kamrul112M
